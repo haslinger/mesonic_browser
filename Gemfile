@@ -35,6 +35,8 @@ end
 gem 'thin', group: [:development, :test]
 
 gem 'debugger', group: [:development, :test]
+gem "better_errors", group: [:development, :test] # Debug messages im Browser
+gem "binding_of_caller", group: [:development, :test] # Repl for better_errors
 
 gem "hobo", "= 2.1.0"
 gem "protected_attributes"

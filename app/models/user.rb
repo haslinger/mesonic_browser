@@ -52,6 +52,7 @@ class User < ActiveRecord::Base
                                             :current_password, :password, :password_confirmation))
     # Note: crypted_password has attr_protected so although it is permitted to change, it cannot be changed
     # directly from a form submission.
+    true
   end
 
   def destroy_permitted?
