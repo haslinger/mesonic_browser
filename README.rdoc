@@ -3,3 +3,10 @@
 This repo is just here for debugging reasons right now,
 it will be propertly announced, when usable.
 
+== Installation Prerequsites
+
+Ruby (developend using 2.1.1, should be fine running 1.9.3)
+FreeTDS:
+```bash
+sudo apt-get install freetds-dev freetds-bin tdsodbc unixodbc unixodbc-dev
+```

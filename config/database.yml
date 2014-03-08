@@ -4,6 +4,26 @@ development:
   pool: 5
   timeout: 5000
 
+mesonic_cwldaten_development:
+  adapter: sqlserver
+  host: 10.0.0.212
+  database: CWLDATEN
+  username: meso
+  password: m+S=0
+  dataserver: 10.0.0.212\SQLEXPRESS
+  encoding: utf8
+  timeout: 5000
+
+mesonic_webedition_development:
+  adapter: sqlserver
+  host: 10.0.0.212
+  database: WEBEDITION
+  username: meso
+  password: m+S=0
+  dataserver: 10.0.0.212\SQLEXPRESS
+  encoding: utf8
+  timeout: 5000
+
 test:
   adapter: sqlite3
   database: db/test.sqlite3
