@@ -38,3 +38,11 @@ gem 'debugger', group: [:development, :test]
 
 gem "hobo", "= 2.1.0"
 gem "protected_attributes"
+# Hobo has a lot of assets.   Stop cluttering the log in development mode.
+gem "quiet_assets", group: :development
+# Hobo's version of will_paginate is required.
+gem "hobo_will_paginate"
+gem "hobo_bootstrap", "2.1.0"
+gem "hobo_jquery_ui", "2.1.0"
+gem "hobo_bootstrap_ui", "2.1.0"
+gem "jquery-ui-themes", "~> 0.0.4"
