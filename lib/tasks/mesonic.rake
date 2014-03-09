@@ -93,4 +93,29 @@ namespace :mesonic do
       end
     end
   end
+
+  # starten als: 'bundle exec rake mesonic:model_translations
+  # in Produktivumgebungen: 'bundle exec rake mesonic:model_translations RAILS_ENV=production'
+  desc "Create Model Translations"
+  task :model_translations => :environment do
+
+    filename = "config/locales/app.de.yml"
+    File.rename(filename, filename + '.old')
+    oldfile = File.open(filename + '.old', 'r')
+    newfile = File.open(filename, 'w')
+
+    oldfile.readlines.each do |line|
+      if line.include?("# models")
+        Mesonictable.all.each do |table|
+          newfile.write "      T#{"%03d" % ( table.c000 / 10 ).to_s}:\n"
+          newfile.write "        one: #{table.c003} \n"
+          newfile.write "        other: #{table.c003} \n"
+        end
+      end
+      newfile.write line
+    end
+    newfile.close
+    oldfile.close
+    # File.delete(filename + '.old', 'r')
+  end
 end

@@ -1,0 +1,1341 @@
+de:
+  attributes:
+    created_at: Erzeugt um
+    updated_at: Aktualisert um
+  activerecord:
+    models:
+      user:
+        one: Benutzer
+        other: Benutzer
+      T001:
+        one: Mandantenstamm
+        other: Mandantenstamm
+      T002:
+        one: Fremdwährung
+        other: Fremdwährung
+      T003:
+        one: temp. Tabelle
+        other: temp. Tabelle
+      T004:
+        one: allgemeine Beschreibungstabelle
+        other: allgemeine Beschreibungstabelle
+      T005:
+        one: Kontenview
+        other: Kontenview
+      T006:
+        one: List - Listenbeschreibung
+        other: List - Listenbeschreibung
+      T007:
+        one: List - Detailinfo
+        other: List - Detailinfo
+      T008:
+        one: KN8-Warenkatalog
+        other: KN8-Warenkatalog
+      T009:
+        one: UstVstBetrag
+        other: UstVstBetrag
+      T010:
+        one: UstVstt525Stamm
+        other: UstVstt525Stamm
+      T011:
+        one: BruttoNetto
+        other: BruttoNetto
+      T012:
+        one: Fremdwährungskurse
+        other: Fremdwährungskurse
+      T013:
+        one: UVA-Formularpos.
+        other: UVA-Formularpos.
+      T014:
+        one: Bestellvorschlag
+        other: Bestellvorschlag
+      T015:
+        one: Steuerleisten
+        other: Steuerleisten
+      T016:
+        one: List - Summenbeschreibung
+        other: List - Summenbeschreibung
+      T017:
+        one: Offene Posten
+        other: Offene Posten
+      T019:
+        one: Offene Posten
+        other: Offene Posten
+      T020:
+        one: ZahlungOP
+        other: ZahlungOP
+      T021:
+        one: Artikelview
+        other: Artikelview
+      T023:
+        one: Artikel Preise
+        other: Artikel Preise
+      T024:
+        one: Artikel Stammdatei
+        other: Artikel Stammdatei
+      T025:
+        one: Bestelldatei Kopf
+        other: Bestelldatei Kopf
+      T026:
+        one: Bestelldatei Mitte
+        other: Bestelldatei Mitte
+      T027:
+        one: Artikelmatch
+        other: Artikelmatch
+      T028:
+        one: Jahresjournal
+        other: Jahresjournal
+      T029:
+        one: Jahresjournal-View
+        other: Jahresjournal-View
+      T030:
+        one: Artikel Lagerwerte
+        other: Artikel Lagerwerte
+      T031:
+        one: Artikel Texte
+        other: Artikel Texte
+      T032:
+        one: Artikelgruppen
+        other: Artikelgruppen
+      T033:
+        one: Vertreterstamm Header
+        other: Vertreterstamm Header
+      T034:
+        one: Vertreterstamm Daten
+        other: Vertreterstamm Daten
+      T035:
+        one: Vertreterstamm Provision
+        other: Vertreterstamm Provision
+      T036:
+        one: FIBUBuchungsart
+        other: FIBUBuchungsart
+      T037:
+        one: Artikel Lagereinstellungen
+        other: Artikel Lagereinstellungen
+      T038:
+        one: Vertreteraufteilung
+        other: Vertreteraufteilung
+      T039:
+        one: Statistik
+        other: Statistik
+      T040:
+        one: Provisions Übernahmejournal
+        other: Provisions Übernahmejournal
+      T041:
+        one: Merkliste Headers
+        other: Merkliste Headers
+      T042:
+        one: Vertreterjournal
+        other: Vertreterjournal
+      T043:
+        one: Preisliste
+        other: Preisliste
+      T044:
+        one: Preislistendefinition
+        other: Preislistendefinition
+      T045:
+        one: Kontakte Stamm
+        other: Kontakte Stamm
+      T046:
+        one: Anschriften Matchcode Merkliste
+        other: Anschriften Matchcode Merkliste
+      T047:
+        one: WEB Edition Verwaltung
+        other: WEB Edition Verwaltung
+      T048:
+        one: Bestellvorschlag-Batch
+        other: Bestellvorschlag-Batch
+      T049:
+        one: Periodenverwaltung
+        other: Periodenverwaltung
+      T050:
+        one: Kontenstamm
+        other: Kontenstamm
+      T051:
+        one: Kontenstamm Adresse
+        other: Kontenstamm Adresse
+      T052:
+        one: Kontenstamm FIBU-Salden
+        other: Kontenstamm FIBU-Salden
+      T053:
+        one: BKZStamm
+        other: BKZStamm
+      T054:
+        one: Kontenstamm FAKT
+        other: Kontenstamm FAKT
+      T055:
+        one: Kontenstamm
+        other: Kontenstamm
+      T056:
+        one: Ansprechpartner
+        other: Ansprechpartner
+      T057:
+        one: Zusatzfelder
+        other: Zusatzfelder
+      T058:
+        one: Kontenstamm FIBU
+        other: Kontenstamm FIBU
+      T059:
+        one: FIBU-Salden
+        other: FIBU-Salden
+      T060:
+        one: Projektstamm
+        other: Projektstamm
+      T061:
+        one: Kontaktestamm
+        other: Kontaktestamm
+      T062:
+        one: Beziehungsstamm
+        other: Beziehungsstamm
+      T063:
+        one: Projekt Berechtigungen für CRM
+        other: Projekt Berechtigungen für CRM
+      T064:
+        one: Projekt Stati Stamm
+        other: Projekt Stati Stamm
+      T065:
+        one: Beziehungsjournal
+        other: Beziehungsjournal
+      T066:
+        one: Batchnummern
+        other: Batchnummern
+      T067:
+        one: ClearingKopf
+        other: ClearingKopf
+      T068:
+        one: ClearingText
+        other: ClearingText
+      T069:
+        one: Eigenschaftenstamm
+        other: Eigenschaftenstamm
+      T070:
+        one: Eigenschaften
+        other: Eigenschaften
+      T071:
+        one: Mandanten f. kons. Bilanz
+        other: Mandanten f. kons. Bilanz
+      T072:
+        one: BilanzKeydatei
+        other: BilanzKeydatei
+      T073:
+        one: Mehrjahresvergleich
+        other: Mehrjahresvergleich
+      T074:
+        one: Zusatzleisten
+        other: Zusatzleisten
+      T075:
+        one: Zusatzleistendefinition
+        other: Zusatzleistendefinition
+      T076:
+        one: Bilanztabelle
+        other: Bilanztabelle
+      T077:
+        one: Projekterfassung
+        other: Projekterfassung
+      T078:
+        one: BKZ-Stamm
+        other: BKZ-Stamm
+      T079:
+        one: CRM-Schnellsuchetabelle
+        other: CRM-Schnellsuchetabelle
+      T080:
+        one: Aktivliste
+        other: Aktivliste
+      T081:
+        one: BKZStamm 2
+        other: BKZStamm 2
+      T082:
+        one: BKZStamm 3
+        other: BKZStamm 3
+      T083:
+        one: Lagerbuchungsjournal
+        other: Lagerbuchungsjournal
+      T084:
+        one: Lagerbuchungsarten
+        other: Lagerbuchungsarten
+      T085:
+        one: ADR Tabelle
+        other: ADR Tabelle
+      T086:
+        one: Gefahrengutmatrix
+        other: Gefahrengutmatrix
+      T087:
+        one: Zolltarifnummer
+        other: Zolltarifnummer
+      T088:
+        one: Verkehrszweig
+        other: Verkehrszweig
+      T089:
+        one: Bestimmungsland
+        other: Bestimmungsland
+      T090:
+        one: Buchungsnummer
+        other: Buchungsnummer
+      T091:
+        one: Kalkulationsschema
+        other: Kalkulationsschema
+      T092:
+        one: Exceldatenblätter
+        other: Exceldatenblätter
+      T093:
+        one: eBKZ-Stamm
+        other: eBKZ-Stamm
+      T094:
+        one: eBKZ-Stamm 2
+        other: eBKZ-Stamm 2
+      T095:
+        one: Zusatztexte
+        other: Zusatztexte
+      T096:
+        one: XML-Rucksack
+        other: XML-Rucksack
+      T097:
+        one: XML-Vorlagen
+        other: XML-Vorlagen
+      T098:
+        one: Nummernkreise
+        other: Nummernkreise
+      T099:
+        one: Nummernkreise - Serien
+        other: Nummernkreise - Serien
+      T100:
+        one: Adressenview
+        other: Adressenview
+      T101:
+        one: Mandantenview
+        other: Mandantenview
+      T102:
+        one: Periodenview
+        other: Periodenview
+      T103:
+        one: Merkliste
+        other: Merkliste
+      T104:
+        one: Merklisten Zeilen
+        other: Merklisten Zeilen
+      T105:
+        one: Beleghistorie
+        other: Beleghistorie
+      T106:
+        one: XML-Rucksack (mandantenunabhängig)
+        other: XML-Rucksack (mandantenunabhängig)
+      T107:
+        one: MahnparameterMahnstufen
+        other: MahnparameterMahnstufen
+      T108:
+        one: MahnparameterGerichtskosten
+        other: MahnparameterGerichtskosten
+      T109:
+        one: Mahnjournal
+        other: Mahnjournal
+      T110:
+        one: Abzugsartenstamm
+        other: Abzugsartenstamm
+      T111:
+        one: Reportdefinition
+        other: Reportdefinition
+      T112:
+        one: Reportvariablen
+        other: Reportvariablen
+      T113:
+        one: Action Server
+        other: Action Server
+      T114:
+        one: Action Server Journal
+        other: Action Server Journal
+      T115:
+        one: Kontenstamm Liefer-/Rechn.adresse
+        other: Kontenstamm Liefer-/Rechn.adresse
+      T116:
+        one: Kontenstamm Zusatzadresse
+        other: Kontenstamm Zusatzadresse
+      T117:
+        one: Vertretervorlagen
+        other: Vertretervorlagen
+      T118:
+        one: Sollbestand
+        other: Sollbestand
+      T119:
+        one: Kontraktkonten
+        other: Kontraktkonten
+      T120:
+        one: BWADatei
+        other: BWADatei
+      T121:
+        one: BWA-Gruppen
+        other: BWA-Gruppen
+      T122:
+        one: Vertretergruppen
+        other: Vertretergruppen
+      T123:
+        one: Verpackungsarten
+        other: Verpackungsarten
+      T124:
+        one: Verpackungsjournal Kopf
+        other: Verpackungsjournal Kopf
+      T125:
+        one: Verpackungsjournal Zeilen
+        other: Verpackungsjournal Zeilen
+      T126:
+        one: Atlasübermittlungsprotokoll
+        other: Atlasübermittlungsprotokoll
+      T130:
+        one: Rabattleiste
+        other: Rabattleiste
+      T131:
+        one: BKZ-Stamm
+        other: BKZ-Stamm
+      T134:
+        one: Anlagenstamm
+        other: Anlagenstamm
+      T135:
+        one: Anlagenstamm
+        other: Anlagenstamm
+      T136:
+        one: Anlagendaten
+        other: Anlagendaten
+      T140:
+        one: FinanzOnline-Journal
+        other: FinanzOnline-Journal
+      T147:
+        one: ZusatztexteErfassen
+        other: ZusatztexteErfassen
+      T148:
+        one: Staffeln
+        other: Staffeln
+      T149:
+        one: Kundenliste - Stammdaten
+        other: Kundenliste - Stammdaten
+      T150:
+        one: Kundenliste - Einzelkunden
+        other: Kundenliste - Einzelkunden
+      T153:
+        one: Anlagenjournal
+        other: Anlagenjournal
+      T155:
+        one: Kontenmatch
+        other: Kontenmatch
+      T160:
+        one: Kalender
+        other: Kalender
+      T161:
+        one: Schemendefinition
+        other: Schemendefinition
+      T165:
+        one: Wörterbuch
+        other: Wörterbuch
+      T166:
+        one: Download-Tabelle
+        other: Download-Tabelle
+      T167:
+        one: read/unread
+        other: read/unread
+      T168:
+        one: Downloadgroups
+        other: Downloadgroups
+      T170:
+        one: CRM Incidences und Schritte
+        other: CRM Incidences und Schritte
+      T171:
+        one: CRM Workflow Schritte
+        other: CRM Workflow Schritte
+      T172:
+        one: CRM Workflow Folgeschritte
+        other: CRM Workflow Folgeschritte
+      T173:
+        one: CRM Workflow Aktionen
+        other: CRM Workflow Aktionen
+      T174:
+        one: CRM Abos
+        other: CRM Abos
+      T175:
+        one: CRM Optionen
+        other: CRM Optionen
+      T176:
+        one: CRM Uploads
+        other: CRM Uploads
+      T177:
+        one: CRM Berechtigungen
+        other: CRM Berechtigungen
+      T178:
+        one: CRM Benutzergruppen
+        other: CRM Benutzergruppen
+      T179:
+        one: CRM Mailjournal
+        other: CRM Mailjournal
+      T180:
+        one: CRM Filter
+        other: CRM Filter
+      T181:
+        one: Allgemeiner Filter
+        other: Allgemeiner Filter
+      T182:
+        one: Mobile Computing-Vorlagen
+        other: Mobile Computing-Vorlagen
+      T183:
+        one: Mobile Computing-Profile
+        other: Mobile Computing-Profile
+      T184:
+        one: Mobile Computing-Parameter
+        other: Mobile Computing-Parameter
+      T185:
+        one: Objekt-Workflow
+        other: Objekt-Workflow
+      T186:
+        one: Temp-Workflows
+        other: Temp-Workflows
+      T187:
+        one: Workflow-Vorlagen
+        other: Workflow-Vorlagen
+      T188:
+        one: CubeTemplate
+        other: CubeTemplate
+      T189:
+        one: Cube
+        other: Cube
+      T190:
+        one: Postausgangsbuch
+        other: Postausgangsbuch
+      T191:
+        one: OutlookGuid Verwaltung
+        other: OutlookGuid Verwaltung
+      T192:
+        one: MesoMail Service
+        other: MesoMail Service
+      T193:
+        one: Gruppen
+        other: Gruppen
+      T194:
+        one: Aboliste
+        other: Aboliste
+      T195:
+        one: Abolisten Abgleich
+        other: Abolisten Abgleich
+      T196:
+        one: Telefonnummern
+        other: Telefonnummern
+      T197:
+        one: EMail Vervollständigung
+        other: EMail Vervollständigung
+      T200:
+        one: PLZ-Stamm
+        other: PLZ-Stamm
+      T201:
+        one: BLZ-Stamm
+        other: BLZ-Stamm
+      T211:
+        one: Anlagengruppen
+        other: Anlagengruppen
+      T215:
+        one: Übernahmedatei
+        other: Übernahmedatei
+      T219:
+        one: AFA-Buchung
+        other: AFA-Buchung
+      T222:
+        one: KOREKOSTParameter
+        other: KOREKOSTParameter
+      T226:
+        one: Zahlungskonditionen
+        other: Zahlungskonditionen
+      T227:
+        one: Zahlungskonditionen - Staffeln
+        other: Zahlungskonditionen - Staffeln
+      T228:
+        one: Statistik Einstellungen
+        other: Statistik Einstellungen
+      T230:
+        one: Kostenstellen
+        other: Kostenstellen
+      T231:
+        one: Kostenstellenview
+        other: Kostenstellenview
+      T232:
+        one: Umlageverfahren
+        other: Umlageverfahren
+      T233:
+        one: Umlageplan
+        other: Umlageplan
+      T234:
+        one: Kostenarten
+        other: Kostenarten
+      T235:
+        one: Kostenartenview
+        other: Kostenartenview
+      T236:
+        one: Umlagejournal
+        other: Umlagejournal
+      T237:
+        one: Umlageauswahl Kostenarten
+        other: Umlageauswahl Kostenarten
+      T238:
+        one: Kostenträger
+        other: Kostenträger
+      T239:
+        one: Kostenträgerview
+        other: Kostenträgerview
+      T240:
+        one: Umlageauswahl Kostenstellen
+        other: Umlageauswahl Kostenstellen
+      T243:
+        one: KostGr Gruppenebenen
+        other: KostGr Gruppenebenen
+      T244:
+        one: KostGr
+        other: KostGr
+      T245:
+        one: Kostenview
+        other: Kostenview
+      T246:
+        one: Kostenjournaldatei
+        other: Kostenjournaldatei
+      T247:
+        one: Einheitentabelle
+        other: Einheitentabelle
+      T248:
+        one: Kostenjournaldatei Ressourcen
+        other: Kostenjournaldatei Ressourcen
+      T250:
+        one: Belegkopfview
+        other: Belegkopfview
+      T257:
+        one: UmlageTabelle
+        other: UmlageTabelle
+      T258:
+        one: Umlagebasis
+        other: Umlagebasis
+      T259:
+        one: KostenartenVerhältnis
+        other: KostenartenVerhältnis
+      T260:
+        one: AfA-Staffel-Header
+        other: AfA-Staffel-Header
+      T261:
+        one: AfA-Staffel-Zeilen
+        other: AfA-Staffel-Zeilen
+      T265:
+        one: Kostenstellen-Budget
+        other: Kostenstellen-Budget
+      T266:
+        one: Kostenträger-Budget
+        other: Kostenträger-Budget
+      T267:
+        one: BudgetVergleich
+        other: BudgetVergleich
+      T268:
+        one: Kostenbudget
+        other: Kostenbudget
+      T269:
+        one: Fakt Aktionsplan
+        other: Fakt Aktionsplan
+      T270:
+        one: FIBU-Budget
+        other: FIBU-Budget
+      T271:
+        one: FAKT-Budget
+        other: FAKT-Budget
+      T272:
+        one: Budgetstamm
+        other: Budgetstamm
+      T273:
+        one: Budgetselektion
+        other: Budgetselektion
+      T274:
+        one: Budgetansicht
+        other: Budgetansicht
+      T275:
+        one: Budget Perioden-Verteil-Regeln
+        other: Budget Perioden-Verteil-Regeln
+      T276:
+        one: ZahlungsBegleitzettel
+        other: ZahlungsBegleitzettel
+      T277:
+        one: Budgetselektion
+        other: Budgetselektion
+      T286:
+        one: Hausbanken / Zahlungsarten
+        other: Hausbanken / Zahlungsarten
+      T287:
+        one: Absenderdaten
+        other: Absenderdaten
+      T288:
+        one: Bankverbindungen
+        other: Bankverbindungen
+      T290:
+        one: Signaturserver-Protokoll
+        other: Signaturserver-Protokoll
+      T298:
+        one: Formel
+        other: Formel
+      T300:
+        one: Ausprägungen Header
+        other: Ausprägungen Header
+      T301:
+        one: Ausprägungen Information
+        other: Ausprägungen Information
+      T303:
+        one: Artikel Auspr.
+        other: Artikel Auspr.
+      T304:
+        one: Ausprägungsverwaltung
+        other: Ausprägungsverwaltung
+      T308:
+        one: Artikel Periodenwerte
+        other: Artikel Periodenwerte
+      T309:
+        one: Artikeluntergruppen
+        other: Artikeluntergruppen
+      T310:
+        one: Artikel Lieferanten
+        other: Artikel Lieferanten
+      T312:
+        one: KontenZusatzHeader
+        other: KontenZusatzHeader
+      T317:
+        one: Stücklistenstamm
+        other: Stücklistenstamm
+      T318:
+        one: Produktionsjournal
+        other: Produktionsjournal
+      T319:
+        one: Stücklistenartikel
+        other: Stücklistenartikel
+      T320:
+        one: Zeiteinheiten
+        other: Zeiteinheiten
+      T321:
+        one: Tätigkeiten
+        other: Tätigkeiten
+      T322:
+        one: Stücklisten-Archiveinträge
+        other: Stücklisten-Archiveinträge
+      T323:
+        one: Ausprägungsverwaltung - Poolnummern
+        other: Ausprägungsverwaltung - Poolnummern
+      T324:
+        one: Produktionslauf
+        other: Produktionslauf
+      T325:
+        one: Produktionsauftrags - Tätigkeiten
+        other: Produktionsauftrags - Tätigkeiten
+      T326:
+        one: Makro
+        other: Makro
+      T327:
+        one: Stücklisten - Ersatzartikel
+        other: Stücklisten - Ersatzartikel
+      T328:
+        one: Sachkonten-Offene Posten
+        other: Sachkonten-Offene Posten
+      T329:
+        one: Mat.Entnahmeschein - Andruck
+        other: Mat.Entnahmeschein - Andruck
+      T330:
+        one: Stapelbezeichnungen
+        other: Stapelbezeichnungen
+      T331:
+        one: Stapel
+        other: Stapel
+      T332:
+        one: Ressourcenstamm
+        other: Ressourcenstamm
+      T334:
+        one: FaktAktionsplan1
+        other: FaktAktionsplan1
+      T339:
+        one: TempFakturen
+        other: TempFakturen
+      T340:
+        one: TempZahlung
+        other: TempZahlung
+      T342:
+        one: ProduktionsVorlauf
+        other: ProduktionsVorlauf
+      T344:
+        one: Artikelführungstexte
+        other: Artikelführungstexte
+      T346:
+        one: Colli
+        other: Colli
+      T347:
+        one: Packstoffarten
+        other: Packstoffarten
+      T351:
+        one: Zahlungsartenjournal
+        other: Zahlungsartenjournal
+      T352:
+        one: Freigabekontrolle
+        other: Freigabekontrolle
+      T353:
+        one: Belegdruck-PDB
+        other: Belegdruck-PDB
+      T355:
+        one: Alternative Artikelnummern
+        other: Alternative Artikelnummern
+      T356:
+        one: Alternative Kontonummern
+        other: Alternative Kontonummern
+      T357:
+        one: Fakt Belegart
+        other: Fakt Belegart
+      T358:
+        one: Textkennzeichen
+        other: Textkennzeichen
+      T359:
+        one: Ersatzartikelnummer
+        other: Ersatzartikelnummer
+      T361:
+        one: ReconciliationKontos
+        other: ReconciliationKontos
+      T363:
+        one: Reconciliationtmprecords
+        other: Reconciliationtmprecords
+      T364:
+        one: Buchungsarten-Gruppen
+        other: Buchungsarten-Gruppen
+      T365:
+        one: Buchungsarten-Gruppen-Daten
+        other: Buchungsarten-Gruppen-Daten
+      T368:
+        one: ÜbernahmeKOREJournal
+        other: ÜbernahmeKOREJournal
+      T371:
+        one: BudgetDatei
+        other: BudgetDatei
+      T372:
+        one: Budget 3
+        other: Budget 3
+      T373:
+        one: Liquiditätsplan
+        other: Liquiditätsplan
+      T374:
+        one: Liquiditätsplan-Detail
+        other: Liquiditätsplan-Detail
+      T376:
+        one: TempKostenjournaldatei
+        other: TempKostenjournaldatei
+      T378:
+        one: KstGrVariator
+        other: KstGrVariator
+      T380:
+        one: Filter Header
+        other: Filter Header
+      T381:
+        one: Filter Einträge
+        other: Filter Einträge
+      T383:
+        one: Prod.Auftrags - Eigenschaften
+        other: Prod.Auftrags - Eigenschaften
+      T386:
+        one: Kundengruppe
+        other: Kundengruppe
+      T388:
+        one: Textbausteine (mandantenunabhängig)
+        other: Textbausteine (mandantenunabhängig)
+      T389:
+        one: Textbausteine
+        other: Textbausteine
+      T390:
+        one: Templates
+        other: Templates
+      T391:
+        one: Template Definition
+        other: Template Definition
+      T392:
+        one: Template Vorbelegungen
+        other: Template Vorbelegungen
+      T400:
+        one: AN-Stamm View Österreich
+        other: AN-Stamm View Österreich
+      T401:
+        one: AN-Stamm
+        other: AN-Stamm
+      T402:
+        one: AN-Stamm (Profit Center)
+        other: AN-Stamm (Profit Center)
+      T403:
+        one: AN-Stamm (SV-Zusatz)
+        other: AN-Stamm (SV-Zusatz)
+      T404:
+        one: AN-Stamm (Angehörige)
+        other: AN-Stamm (Angehörige)
+      T405:
+        one: AN-Stamm (Lohngruppen)
+        other: AN-Stamm (Lohngruppen)
+      T406:
+        one: AN-Stamm (Durchschnitte)
+        other: AN-Stamm (Durchschnitte)
+      T407:
+        one: AN-Stamm (Lohnarten)
+        other: AN-Stamm (Lohnarten)
+      T408:
+        one: AN-Stamm (Konstanten)
+        other: AN-Stamm (Konstanten)
+      T409:
+        one: AN-Stamm (Pfändung)
+        other: AN-Stamm (Pfändung)
+      T410:
+        one: Lohnarten-Stamm
+        other: Lohnarten-Stamm
+      T411:
+        one: Lohnarten-Durchschnitte
+        other: Lohnarten-Durchschnitte
+      T412:
+        one: Durchschnitte
+        other: Durchschnitte
+      T413:
+        one: Konstanten
+        other: Konstanten
+      T417:
+        one: Temporäre FILTER Tabelle
+        other: Temporäre FILTER Tabelle
+      T418:
+        one: Temporäre FILTER Tabelle
+        other: Temporäre FILTER Tabelle
+      T419:
+        one: Temporäre Report Assistententabelle
+        other: Temporäre Report Assistententabelle
+      T420:
+        one: Abrechnung
+        other: Abrechnung
+      T421:
+        one: ABR-Stamm 1
+        other: ABR-Stamm 1
+      T422:
+        one: ABR-Stamm 2
+        other: ABR-Stamm 2
+      T423:
+        one: ABR-Stamm 3
+        other: ABR-Stamm 3
+      T424:
+        one: ABR-Stamm 4
+        other: ABR-Stamm 4
+      T425:
+        one: ABR-Stamm 5
+        other: ABR-Stamm 5
+      T426:
+        one: ABR-Stamm 6
+        other: ABR-Stamm 6
+      T427:
+        one: ABR-Stamm 7
+        other: ABR-Stamm 7
+      T442:
+        one: LOHN TEMP
+        other: LOHN TEMP
+      T443:
+        one: LOHN TEMP
+        other: LOHN TEMP
+      T444:
+        one: Allgemeine Beschreibungstabelle
+        other: Allgemeine Beschreibungstabelle
+      T445:
+        one: ArchivMemo
+        other: ArchivMemo
+      T447:
+        one: ELDA - Schwerarbeitsmeldung
+        other: ELDA - Schwerarbeitsmeldung
+      T448:
+        one: LOHN TEMP
+        other: LOHN TEMP
+      T449:
+        one: LOHN TEMP
+        other: LOHN TEMP
+      T451:
+        one: Pfändungsjournal
+        other: Pfändungsjournal
+      T452:
+        one: Arbeitsstätte
+        other: Arbeitsstätte
+      T453:
+        one: KommSt FINOnline
+        other: KommSt FINOnline
+      T454:
+        one: Zuschuss für Entgeltfortzahlung
+        other: Zuschuss für Entgeltfortzahlung
+      T455:
+        one: Report Assistent 2 Kopfzeilen
+        other: Report Assistent 2 Kopfzeilen
+      T456:
+        one: Report Assistent 2 Zeilen
+        other: Report Assistent 2 Zeilen
+      T457:
+        one: Betriebskalender
+        other: Betriebskalender
+      T458:
+        one: LOHN KORE Journal
+        other: LOHN KORE Journal
+      T459:
+        one: LOHN BMG TEMP
+        other: LOHN BMG TEMP
+      T460:
+        one: ELDA - Arbeits- und Entgeltbest. für Wochengeld
+        other: ELDA - Arbeits- und Entgeltbest. für Wochengeld
+      T461:
+        one: ELDA- Arbeits- und Entgeltbest. für Krankengeld
+        other: ELDA- Arbeits- und Entgeltbest. für Krankengeld
+      T462:
+        one: ELDA - Familienhospiz
+        other: ELDA - Familienhospiz
+      T463:
+        one: Zahlungen an KRK/FA/Gmd.
+        other: Zahlungen an KRK/FA/Gmd.
+      T464:
+        one: E18-Record
+        other: E18-Record
+      T465:
+        one: Arbeitnehmer Bescheinigungstexte
+        other: Arbeitnehmer Bescheinigungstexte
+      T466:
+        one: Bescheinigungen - Textbausteine
+        other: Bescheinigungen - Textbausteine
+      T467:
+        one: Report Assistent
+        other: Report Assistent
+      T468:
+        one: Arbeitsbescheinigung
+        other: Arbeitsbescheinigung
+      T469:
+        one: ELDA-EFZG
+        other: ELDA-EFZG
+      T470:
+        one: L16 Header
+        other: L16 Header
+      T471:
+        one: L16 Arbeitnehmerrecord
+        other: L16 Arbeitnehmerrecord
+      T472:
+        one: allgemeiner Beschreibungstable LOHN
+        other: allgemeiner Beschreibungstable LOHN
+      T473:
+        one: LOHN-Parameter
+        other: LOHN-Parameter
+      T474:
+        one: ELDA - Beitragsgrundlagennachweis
+        other: ELDA - Beitragsgrundlagennachweis
+      T475:
+        one: ELDA - BGN - Header
+        other: ELDA - BGN - Header
+      T476:
+        one: ELDA - BGN - Beitragsgruppen
+        other: ELDA - BGN - Beitragsgruppen
+      T477:
+        one: ELDA - BGN - Nebenbeträge
+        other: ELDA - BGN - Nebenbeträge
+      T478:
+        one: ELDA - BGN - Summen
+        other: ELDA - BGN - Summen
+      T479:
+        one: ELDA - Versichertenmeldungen
+        other: ELDA - Versichertenmeldungen
+      T480:
+        one: Krankenscheinjournal
+        other: Krankenscheinjournal
+      T482:
+        one: Betriebsdatenstamm - KUG Lohnarten
+        other: Betriebsdatenstamm - KUG Lohnarten
+      T483:
+        one: Lohngruppen - Kontierungen
+        other: Lohngruppen - Kontierungen
+      T484:
+        one: Lohnartenerfassung
+        other: Lohnartenerfassung
+      T485:
+        one: Abrechnungsparameter
+        other: Abrechnungsparameter
+      T486:
+        one: Betriebsdatenstamm
+        other: Betriebsdatenstamm
+      T487:
+        one: Herstellerstamm
+        other: Herstellerstamm
+      T488:
+        one: BMG Stamm
+        other: BMG Stamm
+      T489:
+        one: BMG Werte
+        other: BMG Werte
+      T490:
+        one: BMG KRK
+        other: BMG KRK
+      T494:
+        one: SQL Server HOST Id des Benutzers
+        other: SQL Server HOST Id des Benutzers
+      T495:
+        one: Archivdokumente
+        other: Archivdokumente
+      T496:
+        one: Archiv Tabelle
+        other: Archiv Tabelle
+      T497:
+        one: Lizenz-Tabelle
+        other: Lizenz-Tabelle
+      T498:
+        one: SAVETabelle
+        other: SAVETabelle
+      T499:
+        one: LockingTabelle
+        other: LockingTabelle
+      T501:
+        one: Arbeitnehmerstamm - Allg.Daten
+        other: Arbeitnehmerstamm - Allg.Daten
+      T502:
+        one: Arbeitnehmerstamm - SV Daten
+        other: Arbeitnehmerstamm - SV Daten
+      T503:
+        one: Arbeitnehmerstamm - LSt Daten
+        other: Arbeitnehmerstamm - LSt Daten
+      T504:
+        one: Arbeitnehmerstamm - Märkzklausel Daten
+        other: Arbeitnehmerstamm - Märkzklausel Daten
+      T505:
+        one: AN-Stamm (Lohngruppen)
+        other: AN-Stamm (Lohngruppen)
+      T506:
+        one: AN-Stamm (Durchschnitte)
+        other: AN-Stamm (Durchschnitte)
+      T507:
+        one: AN-Stamm (Lohnarten)
+        other: AN-Stamm (Lohnarten)
+      T508:
+        one: AN-Stamm (Konstanten)
+        other: AN-Stamm (Konstanten)
+      T509:
+        one: AN-Stamm (VWL)
+        other: AN-Stamm (VWL)
+      T510:
+        one: Lohnarten-Stamm
+        other: Lohnarten-Stamm
+      T511:
+        one: Lohnarten-Durchschnitte
+        other: Lohnarten-Durchschnitte
+      T512:
+        one: Durchschnitte
+        other: Durchschnitte
+      T513:
+        one: Konstanten
+        other: Konstanten
+      T514:
+        one: AN-Stamm (VWL)
+        other: AN-Stamm (VWL)
+      T515:
+        one: Fehlzeitenstamm
+        other: Fehlzeitenstamm
+      T516:
+        one: Fehlzeiten - Lohnarten
+        other: Fehlzeiten - Lohnarten
+      T517:
+        one: AN-Stamm (Empfänger)
+        other: AN-Stamm (Empfänger)
+      T518:
+        one: AN-Stamm Wertguthaben
+        other: AN-Stamm Wertguthaben
+      T519:
+        one: AN-Stamm (Pfändung)
+        other: AN-Stamm (Pfändung)
+      T520:
+        one: AbrechnungsView
+        other: AbrechnungsView
+      T521:
+        one: Abrechnungsdaten allgemein
+        other: Abrechnungsdaten allgemein
+      T522:
+        one: Abrechnung Lohnsteuer
+        other: Abrechnung Lohnsteuer
+      T523:
+        one: Abrechnung SV
+        other: Abrechnung SV
+      T524:
+        one: Abrechnung Rest (Auszahlung)
+        other: Abrechnung Rest (Auszahlung)
+      T525:
+        one: SV Störfall
+        other: SV Störfall
+      T526:
+        one: fixe SV Unterbrechungen
+        other: fixe SV Unterbrechungen
+      T527:
+        one: Arbeitnehmerstamm Tariftabelle
+        other: Arbeitnehmerstamm Tariftabelle
+      T528:
+        one: AN-Stamm (Profit Center)
+        other: AN-Stamm (Profit Center)
+      T529:
+        one: Arbeitnehmerstamm Werte für ELENA
+        other: Arbeitnehmerstamm Werte für ELENA
+      T530:
+        one: AN-Stamm View Deutschland
+        other: AN-Stamm View Deutschland
+      T531:
+        one: Bescheinigungen
+        other: Bescheinigungen
+      T532:
+        one: AN-Stamm View Deutschland
+        other: AN-Stamm View Deutschland
+      T534:
+        one: Abrechnung ELENA
+        other: Abrechnung ELENA
+      T540:
+        one: Zahlstellen - Meldungen/Rückmeldungen
+        other: Zahlstellen - Meldungen/Rückmeldungen
+      T545:
+        one: Report Assistent 2 Kopfzeilen
+        other: Report Assistent 2 Kopfzeilen
+      T546:
+        one: Report Assistent 2 Zeilen
+        other: Report Assistent 2 Zeilen
+      T547:
+        one: Arbeitnehmer Vorerfassung f. Sofortmeldung
+        other: Arbeitnehmer Vorerfassung f. Sofortmeldung
+      T548:
+        one: Gefahrtarifstellen
+        other: Gefahrtarifstellen
+      T553:
+        one: Antrag auf Erstattung nach AAG
+        other: Antrag auf Erstattung nach AAG
+      T554:
+        one: LOHD RR ELENA TEMP
+        other: LOHD RR ELENA TEMP
+      T555:
+        one: Tarif-Stamm
+        other: Tarif-Stamm
+      T556:
+        one: Tarif-Gruppen/Stufen
+        other: Tarif-Gruppen/Stufen
+      T557:
+        one: Tarif-Zulagennamen
+        other: Tarif-Zulagennamen
+      T558:
+        one: Tarif-Werte
+        other: Tarif-Werte
+      T559:
+        one: Auto. Rückrechnung
+        other: Auto. Rückrechnung
+      T560:
+        one: DEÜV-Meldungen
+        other: DEÜV-Meldungen
+      T561:
+        one: DEÜV-Tabelle
+        other: DEÜV-Tabelle
+      T562:
+        one: DEÜV-Mandant
+        other: DEÜV-Mandant
+      T563:
+        one: Ämter
+        other: Ämter
+      T564:
+        one: Benutzer Objekt Berechtigungen
+        other: Benutzer Objekt Berechtigungen
+      T565:
+        one: Gruppen
+        other: Gruppen
+      T566:
+        one: ELSTER Lohnsteuerbescheinigung
+        other: ELSTER Lohnsteuerbescheinigung
+      T567:
+        one: Report Assistent
+        other: Report Assistent
+      T568:
+        one: Pfändungsjournal
+        other: Pfändungsjournal
+      T569:
+        one: Pfändungsgrenzenstamm
+        other: Pfändungsgrenzenstamm
+      T570:
+        one: KRK/FA/AN Zahlungen
+        other: KRK/FA/AN Zahlungen
+      T571:
+        one: VWL Erfassung
+        other: VWL Erfassung
+      T572:
+        one: allgemeiner Beschreibungstable LOHN
+        other: allgemeiner Beschreibungstable LOHN
+      T573:
+        one: LOHN Parameter
+        other: LOHN Parameter
+      T574:
+        one: Länder - Kirchensteuer
+        other: Länder - Kirchensteuer
+      T575:
+        one: Länder - Kammer
+        other: Länder - Kammer
+      T576:
+        one: DEÜV-Stamm
+        other: DEÜV-Stamm
+      T577:
+        one: Fehlzeitenhistorie
+        other: Fehlzeitenhistorie
+      T578:
+        one: Gefahrenklassen
+        other: Gefahrenklassen
+      T579:
+        one: Betriebsdatenstamm Ersatzkassen
+        other: Betriebsdatenstamm Ersatzkassen
+      T580:
+        one: Krankenkasse Beitragssätze
+        other: Krankenkasse Beitragssätze
+      T581:
+        one: Krankenkassen
+        other: Krankenkassen
+      T582:
+        one: Fehlzeitenerfassung
+        other: Fehlzeitenerfassung
+      T583:
+        one: Lohngruppen - Kontierungen
+        other: Lohngruppen - Kontierungen
+      T584:
+        one: Lohnartenerfassung
+        other: Lohnartenerfassung
+      T585:
+        one: Abrechnungsparameter
+        other: Abrechnungsparameter
+      T586:
+        one: Firmenstamm
+        other: Firmenstamm
+      T587:
+        one: Ländertabelle
+        other: Ländertabelle
+      T588:
+        one: BMG Stamm
+        other: BMG Stamm
+      T589:
+        one: Steuer Werte
+        other: Steuer Werte
+      T590:
+        one: Krankenkassen - Beitragsnachweis
+        other: Krankenkassen - Beitragsnachweis
+      T591:
+        one: ELENA-Tabelle
+        other: ELENA-Tabelle
+      T592:
+        one: ELENA-Mandant
+        other: ELENA-Mandant
+      T593:
+        one: ELENA - Meldungen
+        other: ELENA - Meldungen
+      T594:
+        one: Zahlstellen - Tabelle
+        other: Zahlstellen - Tabelle
+      T595:
+        one: Betriebsdatenpflege Tabelle
+        other: Betriebsdatenpflege Tabelle
+      T596:
+        one: ELENA-Stamm
+        other: ELENA-Stamm
+      T597:
+        one: DASBV-Meldungen
+        other: DASBV-Meldungen
+      T598:
+        one: Meldetabelle Betriebsdatenpflege
+        other: Meldetabelle Betriebsdatenpflege
+      T599:
+        one: Mandantenunabhängige Lockingtabelle
+        other: Mandantenunabhängige Lockingtabelle
+# models
+  attributes:
+    user:
+      name: Name
+      password: Passwort
+      current_password: Aktuelles Passwort
+      password_confirmation: Passwortbestätigung
+      email_address: E-Mail Addresss
+# attributes
