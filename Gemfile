@@ -29,3 +29,5 @@ gem "hobo_bootstrap", "2.1.0"                         # Twitter bootstrap assets
 gem "hobo_jquery_ui", "2.1.0"                         # JQuery UI integration
 gem "hobo_bootstrap_ui", "2.1.0"                      # Twitter bootstrap framework integration
 gem "jquery-ui-themes", "~> 0.0.4"                    # JQuery UI themes assets
+
+gem "roo"                                             # XLSX Import

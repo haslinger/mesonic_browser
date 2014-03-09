@@ -94,6 +94,7 @@
     </content-header:>
 
     <content-body: param>
+      <field-list fields="c000, c001, c002, c003, c050, c051, c052, c053, c054, c055, c056, c057, c058, c059" param/>
     </content-body:>
 
   </page>
@@ -205,6 +206,7 @@
     </content-header:>
 
     <content-body: param>
+      <field-list fields="c000, c001, c002, c003, c050, c051, c052, c053, c054, c055, c056, c057, c058, c059" param/>
     </content-body:>
 
   </page>

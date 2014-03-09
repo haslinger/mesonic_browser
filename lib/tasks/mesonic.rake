@@ -1,4 +1,6 @@
 # encoding: utf-8
+require 'roo'
+
 namespace :mesonic do
   # starten als: 'bundle exec rake mesonic:discovery
   # in Produktivumgebungen: 'bundle exec rake mesonic:discovery RAILS_ENV=production'
@@ -6,8 +8,7 @@ namespace :mesonic do
   task :discovery => :environment do
 
     tablename = "T000".downcase
-    modelname = "Mesonictables"
-    classname = tablename.upcase
+    modelname = tablename.upcase
     primary_key = "C000".downcase
 
     eval("class " + modelname + " < Mesonic ; end")
@@ -47,11 +48,11 @@ namespace :mesonic do
   desc "Create Tables with Tablenames"
   task :tables => :environment do
 
-    @file =  Roo::Excel.new("materials/T000.xls")
-    @sheet = @file.sheets.first
-    @sheet.rows.each do |row|
-      if row(0).start_with?("000")
-
+    @file =  Roo::Excelx.new("materials/T000.xlsx")
+    @sheet = @file.sheet(0)
+    2..@sheet.last_row.each do |index|
+      if @sheet.cell(index,1).start_with?("000")
+# ....
       end
     end
   end
