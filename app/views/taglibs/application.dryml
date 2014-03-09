@@ -1,3 +1,37 @@
 <!-- this file is included by front_site.dryml, admin_site.dryml et al, so
 you can place common code in this file. -->
 
+<extend tag="page">
+  <old-page merge>
+    <container: replace>
+      <div class='container-fluid bootstrap-content' param='container'>
+        <div class='row-fluid' param='main-row'>
+          <div class='#{aside_span}' param='aside-column' if='&all_parameters[:aside] && aside_location==&apos;left&apos;'>
+            <div class='well'>
+              <section param='aside'/>
+            </div>
+          </div>
+          <div class='span#{attributes[:content_size]}' param='main-column'>
+            <section param='content' with-flash-messages>
+              <section param='main-content'>
+                <header param='content-header'/>
+                <section param='content-body'/>
+              </section>
+            </section>
+          </div>
+          <div class='#{aside_span}' param='aside-column' if='&all_parameters[:aside] && aside_location==&apos;right&apos;'>
+            <div class='well'>
+              <section param='aside'/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container:>
+  </old-page>
+</extend>
+
+<extend tag='index-page'>
+  <old-index-page merge>
+    <collection: class="table-condensed" />
+  </old-index-page>
+</extend>

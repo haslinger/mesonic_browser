@@ -6,21 +6,21 @@ development:
 
 mesonic_cwldaten_development:
   adapter: sqlserver
-  host: 10.0.0.212
+  host: 192.168.122.2
   database: CWLDATEN
   username: meso
   password: m+S=0
-  dataserver: 10.0.0.212\SQLEXPRESS
+  dataserver: 192.168.122.2\SQLEXPRESS
   encoding: utf8
   timeout: 5000
 
 mesonic_webedition_development:
   adapter: sqlserver
-  host: 10.0.0.212
+  host: 192.168.122.2
   database: WEBEDITION
   username: meso
   password: m+S=0
-  dataserver: 10.0.0.212\SQLEXPRESS
+  dataserver: 192.168.122.2\SQLEXPRESS
   encoding: utf8
   timeout: 5000
 
