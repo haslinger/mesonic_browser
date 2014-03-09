@@ -1,0 +1,2 @@
+module MesonictablesHelper
+end

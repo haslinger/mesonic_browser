@@ -6,8 +6,232 @@
 <def tag="main-nav">
   <navigation class="main-nav" merge-attrs param="default">
     <nav-item href="#{base_url}/">Home</nav-item>
+    <nav-item with="&Mesoniccolumn"><ht key="mesoniccolumn.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&Mesonictable"><ht key="mesonictable.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
   </navigation>
 </def>
+
+
+
+
+<!-- ====== Mesoniccolumn Pages ====== -->
+
+<def tag="index-page" for="Mesoniccolumn">
+  <page merge title="#{ht 'mesoniccolumn.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page mesoniccolumn" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="mesoniccolumn.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="mesoniccolumn.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="mesoniccolumn.actions.new">New Mesoniccolumn</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Mesoniccolumn">
+  <page merge title="#{ht 'mesoniccolumn.new.title', :default=>[' New Mesoniccolumn'] }">
+    <body: class="new-page mesoniccolumn" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="mesoniccolumn.new.heading">
+          New Mesoniccolumn
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 'mesoniccolumn.actions.create', :default=>['Create Mesoniccolumn']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Mesoniccolumn">
+  <page merge title="#{ht 'mesoniccolumn.show.title', :default=>['Mesoniccolumn'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page mesoniccolumn" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="mesoniccolumn.show.heading" name="#{name(:no_wrapper => true)}">
+          Mesoniccolumn <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="mesoniccolumn.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit Mesoniccolumn
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Mesoniccolumn">
+  <page merge title="#{ht 'mesoniccolumn.edit.title', :default=>['Edit Mesoniccolumn'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page mesoniccolumn" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="mesoniccolumn.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit Mesoniccolumn
+        </ht>
+      </h2>
+      <delete-button label="#{ht 'mesoniccolumn.actions.delete', :default=>['Remove This Mesoniccolumn']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Mesonictable Pages ====== -->
+
+<def tag="index-page" for="Mesonictable">
+  <page merge title="#{ht 'mesonictable.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page mesonictable" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="mesonictable.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="mesonictable.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="mesonictable.actions.new">New Mesonictable</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Mesonictable">
+  <page merge title="#{ht 'mesonictable.new.title', :default=>[' New Mesonictable'] }">
+    <body: class="new-page mesonictable" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="mesonictable.new.heading">
+          New Mesonictable
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 'mesonictable.actions.create', :default=>['Create Mesonictable']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Mesonictable">
+  <page merge title="#{ht 'mesonictable.show.title', :default=>['Mesonictable'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page mesonictable" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="mesonictable.show.heading" name="#{name(:no_wrapper => true)}">
+          Mesonictable <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="mesonictable.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit Mesonictable
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Mesonictable">
+  <page merge title="#{ht 'mesonictable.edit.title', :default=>['Edit Mesonictable'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page mesonictable" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="mesonictable.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit Mesonictable
+        </ht>
+      </h2>
+      <delete-button label="#{ht 'mesonictable.actions.delete', :default=>['Remove This Mesonictable']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
 
 
 
