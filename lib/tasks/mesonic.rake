@@ -7,42 +7,44 @@ namespace :mesonic do
   desc "Creates dummy prices, inventories and activates products"
   task :discovery => :environment do
 
-    tablename = "T002".downcase
-    modelname = tablename.upcase
-    primary_key = "C017".downcase
+    (11..15).each do |index|
+      table = Mesonictable.where(c000: index * 10).first
+      modelname = "T" + ("%03d" % index ).to_s
+      tablename = modelname.downcase
+      primary_key = table.c002.downcase
 
-    eval("class " + modelname + " < Mesonic ; end")
+      eval("class " + modelname + " < Mesonic ; end")
 
-    @task = "rails generate hobo:resource "+ modelname + " "
+      @task = "rails generate hobo:resource "+ modelname + " "
 
-    eval(modelname).columns.each do |column|
-      @task += column.name.to_s + ":" + column.type.to_s + " "
-    end
-
-    puts @task
-    puts system(@task)
-
-    filename = "app/models/" + modelname.underscore + ".rb"
-    File.rename(filename, filename + '.old')
-    oldfile = File.open(filename + '.old', 'r')
-    newfile = File.open(filename, 'w')
-
-    oldfile.readlines.each do |line|
-      if line.include?("# Don't put anything above this")
-        newfile.write "  establish_connection :mesonic_cwldaten_development\n"
-        newfile.write "  self.table_name = \"#{tablename}\"\n"
-        newfile.write "  self.primary_key = \"#{primary_key}\"\n\n"
+      eval(modelname).columns.each do |column|
+        @task += column.name.to_s + ":" + column.type.to_s + " "
       end
 
-      # getting rid of binary ts columns
-      next if line.include?(":binary")
-      line.sub!(", :ts","")
+      puts @task
+      puts system(@task)
 
-      newfile.write line
+      filename = "app/models/" + modelname.underscore + ".rb"
+      File.rename(filename, filename + '.old')
+      oldfile = File.open(filename + '.old', 'r')
+      newfile = File.open(filename, 'w')
+
+      oldfile.readlines.each do |line|
+        if line.include?("# Don't put anything above this")
+          newfile.write "  establish_connection :mesonic_cwldaten_development\n"
+          newfile.write "  self.table_name = \"#{tablename}\"\n"
+          newfile.write "  self.primary_key = \"#{primary_key}\"\n\n"
+        end
+
+        # getting rid of binary ts columns
+        next if line.include?(":binary")
+        line.sub!(", :ts","")
+
+        newfile.write line
+      end
+      newfile.close
+      oldfile.close
     end
-    newfile.close
-    oldfile.close
-    File.delete(filename + '.old', 'r')
   end
 
   # starten als: 'bundle exec rake mesonic:tables

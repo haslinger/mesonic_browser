@@ -10,6 +10,15 @@
     <nav-item with="&Mesonictable"><ht key="mesonictable.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
     <nav-item with="&T001"><ht key="t001.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
     <nav-item with="&T002"><ht key="t002.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&T003"><ht key="t003.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&T004"><ht key="t004.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&T009"><ht key="t009.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&T010"><ht key="t010.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&T011"><ht key="t011.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&T012"><ht key="t012.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&T013"><ht key="t013.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&T014"><ht key="t014.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&T015"><ht key="t015.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
   </navigation>
 </def>
 
@@ -451,6 +460,1014 @@
         </ht>
       </h2>
       <delete-button label="#{ht 't002.actions.delete', :default=>['Remove This T002']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== T003 Pages ====== -->
+
+<def tag="index-page" for="T003">
+  <page merge title="#{ht 't003.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page t003" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t003.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="t003.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="t003.actions.new">New T003</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="T003">
+  <page merge title="#{ht 't003.new.title', :default=>[' New T003'] }">
+    <body: class="new-page t003" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t003.new.heading">
+          New T003
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 't003.actions.create', :default=>['Create T003']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="T003">
+  <page merge title="#{ht 't003.show.title', :default=>['T003'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page t003" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t003.show.heading" name="#{name(:no_wrapper => true)}">
+          T003 <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="t003.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit T003
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+      <field-list fields="c001, c002, mesocomp, mesoyear, mesoprim" param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="T003">
+  <page merge title="#{ht 't003.edit.title', :default=>['Edit T003'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page t003" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t003.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit T003
+        </ht>
+      </h2>
+      <delete-button label="#{ht 't003.actions.delete', :default=>['Remove This T003']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== T004 Pages ====== -->
+
+<def tag="index-page" for="T004">
+  <page merge title="#{ht 't004.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page t004" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t004.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="t004.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="t004.actions.new">New T004</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="T004">
+  <page merge title="#{ht 't004.new.title', :default=>[' New T004'] }">
+    <body: class="new-page t004" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t004.new.heading">
+          New T004
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 't004.actions.create', :default=>['Create T004']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="T004">
+  <page merge title="#{ht 't004.show.title', :default=>['T004'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page t004" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t004.show.heading" name="#{name(:no_wrapper => true)}">
+          T004 <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="t004.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit T004
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+      <field-list fields="c000, c001, c002, c003, c004, c005, c006, c007, c008, c009, c010, c011, mesocomp, mesoyear" param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="T004">
+  <page merge title="#{ht 't004.edit.title', :default=>['Edit T004'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page t004" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t004.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit T004
+        </ht>
+      </h2>
+      <delete-button label="#{ht 't004.actions.delete', :default=>['Remove This T004']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== T009 Pages ====== -->
+
+<def tag="index-page" for="T009">
+  <page merge title="#{ht 't009.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page t009" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t009.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="t009.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="t009.actions.new">New T009</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="T009">
+  <page merge title="#{ht 't009.new.title', :default=>[' New T009'] }">
+    <body: class="new-page t009" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t009.new.heading">
+          New T009
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 't009.actions.create', :default=>['Create T009']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="T009">
+  <page merge title="#{ht 't009.show.title', :default=>['T009'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page t009" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t009.show.heading" name="#{name(:no_wrapper => true)}">
+          T009 <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="t009.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit T009
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+      <field-list fields="c000, c001, c002, c003, c004, c005, c006, c007, mesocomp, mesoyear" param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="T009">
+  <page merge title="#{ht 't009.edit.title', :default=>['Edit T009'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page t009" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t009.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit T009
+        </ht>
+      </h2>
+      <delete-button label="#{ht 't009.actions.delete', :default=>['Remove This T009']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== T010 Pages ====== -->
+
+<def tag="index-page" for="T010">
+  <page merge title="#{ht 't010.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page t010" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t010.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="t010.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="t010.actions.new">New T010</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="T010">
+  <page merge title="#{ht 't010.new.title', :default=>[' New T010'] }">
+    <body: class="new-page t010" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t010.new.heading">
+          New T010
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 't010.actions.create', :default=>['Create T010']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="T010">
+  <page merge title="#{ht 't010.show.title', :default=>['T010'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page t010" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t010.show.heading" name="#{name(:no_wrapper => true)}">
+          T010 <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="t010.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit T010
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+      <field-list fields="c000, c001, c002, c003, c004, c006, c007, c008, c009, c011, c012, c013, c014, c015, mesosafe, mesocomp, mesoyear, mesoprim, c016, c017, c018, c019, c020, c021, c022, c023" param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="T010">
+  <page merge title="#{ht 't010.edit.title', :default=>['Edit T010'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page t010" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t010.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit T010
+        </ht>
+      </h2>
+      <delete-button label="#{ht 't010.actions.delete', :default=>['Remove This T010']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== T011 Pages ====== -->
+
+<def tag="index-page" for="T011">
+  <page merge title="#{ht 't011.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page t011" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t011.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="t011.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="t011.actions.new">New T011</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="T011">
+  <page merge title="#{ht 't011.new.title', :default=>[' New T011'] }">
+    <body: class="new-page t011" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t011.new.heading">
+          New T011
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 't011.actions.create', :default=>['Create T011']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="T011">
+  <page merge title="#{ht 't011.show.title', :default=>['T011'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page t011" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t011.show.heading" name="#{name(:no_wrapper => true)}">
+          T011 <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="t011.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit T011
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+      <field-list fields="c001, c002, c003, c004, c005, c006, c007, c008, c009, c010, c011, c012, c013, c014, c015, c016, mesosafe, mesocomp, mesoyear" param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="T011">
+  <page merge title="#{ht 't011.edit.title', :default=>['Edit T011'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page t011" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t011.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit T011
+        </ht>
+      </h2>
+      <delete-button label="#{ht 't011.actions.delete', :default=>['Remove This T011']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== T012 Pages ====== -->
+
+<def tag="index-page" for="T012">
+  <page merge title="#{ht 't012.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page t012" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t012.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="t012.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="t012.actions.new">New T012</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="T012">
+  <page merge title="#{ht 't012.new.title', :default=>[' New T012'] }">
+    <body: class="new-page t012" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t012.new.heading">
+          New T012
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 't012.actions.create', :default=>['Create T012']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="T012">
+  <page merge title="#{ht 't012.show.title', :default=>['T012'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page t012" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t012.show.heading" name="#{name(:no_wrapper => true)}">
+          T012 <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="t012.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit T012
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+      <field-list fields="c000, c001, c002, c003, c004, c005, c006, c007, c008, c009, mesocomp, mesoyear" param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="T012">
+  <page merge title="#{ht 't012.edit.title', :default=>['Edit T012'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page t012" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t012.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit T012
+        </ht>
+      </h2>
+      <delete-button label="#{ht 't012.actions.delete', :default=>['Remove This T012']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== T013 Pages ====== -->
+
+<def tag="index-page" for="T013">
+  <page merge title="#{ht 't013.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page t013" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t013.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="t013.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="t013.actions.new">New T013</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="T013">
+  <page merge title="#{ht 't013.new.title', :default=>[' New T013'] }">
+    <body: class="new-page t013" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t013.new.heading">
+          New T013
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 't013.actions.create', :default=>['Create T013']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="T013">
+  <page merge title="#{ht 't013.show.title', :default=>['T013'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page t013" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t013.show.heading" name="#{name(:no_wrapper => true)}">
+          T013 <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="t013.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit T013
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+      <field-list fields="c000, c001, c002, c003, c004, c005, c006, c007, c008, c009, mesosafe, mesocomp, mesoyear" param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="T013">
+  <page merge title="#{ht 't013.edit.title', :default=>['Edit T013'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page t013" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t013.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit T013
+        </ht>
+      </h2>
+      <delete-button label="#{ht 't013.actions.delete', :default=>['Remove This T013']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== T014 Pages ====== -->
+
+<def tag="index-page" for="T014">
+  <page merge title="#{ht 't014.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page t014" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t014.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="t014.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="t014.actions.new">New T014</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="T014">
+  <page merge title="#{ht 't014.new.title', :default=>[' New T014'] }">
+    <body: class="new-page t014" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t014.new.heading">
+          New T014
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 't014.actions.create', :default=>['Create T014']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="T014">
+  <page merge title="#{ht 't014.show.title', :default=>['T014'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page t014" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t014.show.heading" name="#{name(:no_wrapper => true)}">
+          T014 <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="t014.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit T014
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+      <field-list fields="c000, c001, c002, c003, c004, c005, c006, c007, c008, c009, c010, c011, c012, c013, c014, c015, c016, c017, c018, c019, c020, c021, c022, c023, c024, c025, c026, c027, c028, c029, c030, c031, c032, c033, c034, c035, c036, c037, c038, c039, c040, c041, c042, c043, c044, c045, mesocomp, mesoyear, c046, c047, c048, c049, c050, c051, c052" param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="T014">
+  <page merge title="#{ht 't014.edit.title', :default=>['Edit T014'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page t014" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t014.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit T014
+        </ht>
+      </h2>
+      <delete-button label="#{ht 't014.actions.delete', :default=>['Remove This T014']}" param/>
+    </content-header:>
+
+    <content-body: param>
+      <form param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== T015 Pages ====== -->
+
+<def tag="index-page" for="T015">
+  <page merge title="#{ht 't015.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page t015" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t015.index.heading">
+          <model-name-human model="&model"/>
+        </ht>
+      </h2>
+
+      <p param="count" if>
+        <ht key="t015.collection.count" count="&collection_count">
+          <count summary/>
+        </ht>
+      </p>
+    </content-header:>
+
+    <content-body: param>
+      <a action="new" to="&model" param="new-link">
+        <ht key="t015.actions.new">New T015</ht>
+      </a>
+
+      <page-nav param="top-page-nav"/>
+
+      <collection param/>
+
+      <page-nav param="bottom-page-nav"/>
+
+
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="T015">
+  <page merge title="#{ht 't015.new.title', :default=>[' New T015'] }">
+    <body: class="new-page t015" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t015.new.heading">
+          New T015
+        </ht>
+      </h2>
+    </content-header:>
+
+    <content-body: param>
+      <form param>
+        <submit: label="#{ht 't015.actions.create', :default=>['Create T015']}"/>
+      </form>
+    </content-body:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="T015">
+  <page merge title="#{ht 't015.show.title', :default=>['T015'], :name => name(:no_wrapper => true) }" without-aside >
+
+    <body: class="show-page t015" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t015.show.heading" name="#{name(:no_wrapper => true)}">
+          T015 <name/>
+        </ht>
+      </h2>
+
+      <record-flags fields="" param/>
+
+      <a action="edit" if="&can_edit?" param="edit-link">
+        <ht key="t015.actions.edit" name="#{name(:no_wrapper => true)}">
+          Edit T015
+        </ht>
+      </a>
+    </content-header:>
+
+    <content-body: param>
+      <field-list fields="c001, c002, c003, c004, c005, mesosafe, mesocomp, mesoyear, mesoprim" param/>
+    </content-body:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="T015">
+  <page merge title="#{ht 't015.edit.title', :default=>['Edit T015'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page t015" param/>
+
+    <content-header: param>
+      <h2 param="heading">
+        <ht key="t015.edit.heading" name="#{name(:no_wrapper => true)}">
+          Edit T015
+        </ht>
+      </h2>
+      <delete-button label="#{ht 't015.actions.delete', :default=>['Remove This T015']}" param/>
     </content-header:>
 
     <content-body: param>

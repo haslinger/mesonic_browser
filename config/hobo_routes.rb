@@ -9,6 +9,18 @@ MesonicBrowser::Application.routes.draw do
   resources :t001s
 
 
+  # Resource routes for controller t003s
+  resources :t003s
+
+
+  # Resource routes for controller t009s
+  resources :t009s
+
+
+  # Resource routes for controller t004s
+  resources :t004s
+
+
   # Resource routes for controller mesoniccolumns
   resources :mesoniccolumns
 
@@ -40,6 +52,30 @@ MesonicBrowser::Application.routes.draw do
   get 'logout(.:format)' => 'users#logout', :as => 'user_logout'
   get 'forgot_password(.:format)' => 'users#forgot_password', :as => 'user_forgot_password'
   post 'forgot_password(.:format)' => 'users#forgot_password', :as => 'user_forgot_password_post'
+
+
+  # Resource routes for controller t010s
+  resources :t010s
+
+
+  # Resource routes for controller t013s
+  resources :t013s
+
+
+  # Resource routes for controller t012s
+  resources :t012s
+
+
+  # Resource routes for controller t015s
+  resources :t015s
+
+
+  # Resource routes for controller t014s
+  resources :t014s
+
+
+  # Resource routes for controller t011s
+  resources :t011s
 
   namespace :concerns do
 
