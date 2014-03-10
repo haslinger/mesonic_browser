@@ -118,4 +118,33 @@ namespace :mesonic do
     oldfile.close
     # File.delete(filename + '.old', 'r')
   end
+
+  # starten als: 'bundle exec rake mesonic:attribute_translations
+  # in Produktivumgebungen: 'bundle exec rake mesonic:attribute_translations RAILS_ENV=production'
+  desc "Create Model Translations"
+  task :attribute_translations => :environment do
+
+    filename = "config/locales/app.de.yml"
+    File.rename(filename, filename + '.old')
+    oldfile = File.open(filename + '.old', 'r')
+    newfile = File.open(filename, 'w')
+    @table = ""
+
+    oldfile.readlines.each do |line|
+      if line.include?("# attributes")
+        Mesoniccolumn.all.each do |column|
+          myclass = "T" + "%03d" % column.c000.to_s[0..-5]
+          unless myclass == @table
+            @table = myclass
+            newfile.write "      " + @table + ":\n"
+          end
+          newfile.write "        C" + column.c000.to_s[-4..-2] + ": " + column.c003 + "\n" if column.c003
+        end
+      end
+      newfile.write line
+    end
+    newfile.close
+    oldfile.close
+    # File.delete(filename + '.old', 'r')
+  end
 end
