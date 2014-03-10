@@ -1,6 +1,5 @@
-class T303 < ActiveRecord::Base
+class T303 < Mesonic
 
-  establish_connection :mesonic_cwldaten_development
   self.table_name = "t303"
   self.primary_key = "c002"
 

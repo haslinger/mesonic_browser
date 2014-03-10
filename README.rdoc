@@ -10,3 +10,5 @@ FreeTDS:
 ```bash
 sudo apt-get install freetds-dev freetds-bin tdsodbc unixodbc unixodbc-dev
 ```
+
+Keine Übersetzungen für T306, T307 und T533 vorhanden.

@@ -16,10 +16,11 @@ gem 'jbuilder', '~> 1.2'                              # Build JSON APIs with eas
 gem 'sdoc', require: false, group: :doc               # bundle exec rake doc:rails generates the API under doc/api.
 
 gem "quiet_assets", group: :development               #Stops cluttering the log in development mode.
-gem 'thin', group: [:development, :test]              # Development applation server replaces Webrick
+# gem 'thin', group: [:development, :test]              # Development applation server replaces Webrick
 gem 'debugger', group: [:development, :test]          # Rails debugging
 gem "better_errors", group: [:development, :test]     # Debug messages in the browser window
 gem "binding_of_caller", group: [:development, :test] # Repl for better_errors
+gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git', group: [:development]
 
 gem "hobo", "= 2.1.0"                                 # Meta web application framework
 

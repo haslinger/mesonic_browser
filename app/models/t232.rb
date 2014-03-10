@@ -1,6 +1,5 @@
-class T232 < ActiveRecord::Base
+class T232 < Mesonic
 
-  establish_connection :mesonic_cwldaten_development
   self.table_name = "t232"
   self.primary_key = "c000"
 

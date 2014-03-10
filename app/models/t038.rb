@@ -1,6 +1,5 @@
-class T038 < ActiveRecord::Base
+class T038 < Mesonic
 
-  establish_connection :mesonic_cwldaten_development
   self.table_name = "t038"
   self.primary_key = "mesokey"
 

@@ -19,7 +19,6 @@ class User < ActiveRecord::Base
     end
   end
 
-
   # --- Signup lifecycle --- #
 
   lifecycle do
