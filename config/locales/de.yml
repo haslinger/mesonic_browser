@@ -143,10 +143,10 @@ de:
         strip_insignificant_zeros: false
         unit: EUR
     format:
-      delimiter: .
+      delimiter: " "
       precision: 2
       separator: ! ','
-      significant: false
+      significant: true
       strip_insignificant_zeros: false
     human:
       decimal_units:

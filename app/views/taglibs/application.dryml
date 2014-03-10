@@ -35,3 +35,7 @@ you can place common code in this file. -->
     <collection: class="table-condensed" />
   </old-index-page>
 </extend>
+
+<def tag="main-nav">
+  <navigation class="main-nav" merge-attrs param="default"/>
+</def>

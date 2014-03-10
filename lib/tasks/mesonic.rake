@@ -7,7 +7,7 @@ namespace :mesonic do
   desc "Creates dummy prices, inventories and activates products"
   task :discovery => :environment do
 
-    (11..15).each do |index|
+[451, 452, 453, 454, 457, 458, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 482, 483, 484, 485, 486, 487, 488, 489, 490, 494, 496, 497, 498, 499, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 521, 522, 523, 524, 525, 526, 527, 528, 529, 531, 533, 534, 547, 548, 553, 555, 556, 557, 558, 561, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 594, 595, 596].each do |index|
       table = Mesonictable.where(c000: index * 10).first
       modelname = "T" + ("%03d" % index ).to_s
       tablename = modelname.downcase
@@ -44,6 +44,7 @@ namespace :mesonic do
       end
       newfile.close
       oldfile.close
+      File.delete(filename + '.old')
     end
   end
 
